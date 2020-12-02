@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8f301084b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./animations.css">
+    <title>Number Guesser Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-2">
+            <div>
+                <h1>Number Guesser Game</h1>
+                <p class="lighted">Guess a number between 1 and 10</p>
+                <div class="input">
+                    <input type="number" id="number" placeholder="Enter your guess...">
+                    <button class="btn">SUBMIT</button>
+                </div>
+            </div>
+            <div id="turns">
+                <div class="fcen">
+                    <p><span>4</span></p>
+                </div>
+            </div>
+        </div>
+        <div id="output"><i class="fas fa-hand-point-right"></i><span>Enter your Guess. Make sure you remember previous guesses.</span></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

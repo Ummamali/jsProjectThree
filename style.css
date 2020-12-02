@@ -1,0 +1,140 @@
+/* This is the main stylesheet */
+
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Opan Sans', sans-serif;
+}
+
+h1{
+    font-weight: 400;
+    color: #222222;
+}
+
+/* Inner classes */
+.container{
+    max-width: 770px;
+    margin: 0px auto;
+    padding: 30px 20px 20px 20px;
+}
+
+.input{
+    margin: 20px 0px;
+}
+.input input{
+    border: 1px solid #aaaaaa;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.input input:focus{
+    outline: none;
+    border-color: #777777;
+}
+
+
+
+/* special items */
+#turns{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+#turns .fcen{
+    font-size: 50px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    background: #2849c2e7;
+    color: #fff;
+}
+#turns p span{
+    transition-property: opacity;
+    transition-duration: 300ms;
+}
+
+/* Utility classes */
+.btn{
+    display: inline-block;
+    padding: 6px 20px;
+    background: none;
+    border: 1px solid #aaaaaa;
+    color: #555555;
+    letter-spacing: 0.05rem;
+    border-radius: 3px;
+    margin-left: 5px;
+    transition: background 160ms;
+}
+.btn:hover, .btn:focus{
+    outline: none;
+    cursor: pointer;
+    background: #3457D5;
+    color: #ffffff;
+    border-color: transparent;
+}
+.btn:active{
+    background: #2849c2;
+}
+
+
+/* Output */
+#output {
+    padding: 5px 20px;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    color: #333333;
+    margin-top: 30px;
+}
+#output span{
+    transition-property: opacity;
+    transition-duration: 300ms;
+}
+#output i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+
+/* grid and stuff */
+.grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* Background and froeground colors */
+.lighted{
+    color: #767676;
+}
+
+
+/* flexboxes */
+.fcen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* media queries  */
+@media (max-width: 720px){
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+    .grid-2 div:nth-child(1){
+        text-align: center;
+    }
+
+    #turns{
+        padding-top: 0px;
+    }
+}
